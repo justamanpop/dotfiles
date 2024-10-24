@@ -1,0 +1,41 @@
+{
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["C-j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [":"],
+            "after": [";"]
+        },
+        {
+            "before": [";"],
+            "after": [":"]
+        }
+    ],
+    "vim.useSystemClipboard": true,
+    "vim.smartRelativeLine": true,
+    "workbench.colorTheme": "Tokyo Night nv",
+    "workbench.activityBar.location": "hidden",
+    // "editor.scrollbar.vertical": "hidden",
+    "workbench.sideBar.location": "right",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "window.menuBarVisibility": "toggle",
+    "workbench.layoutControl.enabled": false,
+    "window.commandCenter": false,
+    "window.title": "${dirty}${activeEditorShort}",
+    "workbench.editor.showTabs": "none",
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "rgba(224, 198, 101, 1)",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.startupEditor": "none",
+    "javascript.updateImportsOnFileMove.enabled": "always"
+    
+}
