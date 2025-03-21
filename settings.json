@@ -36,6 +36,13 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "explorer.confirmDragAndDrop": false,
     "workbench.startupEditor": "none",
-    "javascript.updateImportsOnFileMove.enabled": "always"
-    
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.colorCustomizations": {
+        "editor.selectionBackground": "#5d6263",
+        "editor.selectionHighlightBackground": "#135564"
+    },
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1,
+        "asvetliakov.vscode-neovim": 1
+    }
 }
