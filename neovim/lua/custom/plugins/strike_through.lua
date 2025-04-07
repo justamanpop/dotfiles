@@ -3,7 +3,7 @@ local toggleStrikeThrough = function()
   local no_strike_through_line = ''
   for i = 1, #curr_line do
     local c = curr_line:sub(i, i)
-    if c:match '%w' or c == '.' or c == ' ' or c == ',' or c == '-' then
+    if c:match '%w' or c == '.' or c == ' ' or c == ',' or c == '-' or c == '_' or c == ':' then
       no_strike_through_line = no_strike_through_line .. c
     end
   end

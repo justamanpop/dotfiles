@@ -1,0 +1,5 @@
+require('snipe').global_menu:add_new_buffer_callback(function(m)
+  vim.keymap.set('n', 'q', function()
+    m:close()
+  end, { nowait = true, buffer = m.buf })
+end)

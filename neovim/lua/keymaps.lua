@@ -12,6 +12,9 @@ vim.keymap.set('n', ':', ';')
 vim.keymap.set({ 'n', 'v' }, 'L', '$')
 vim.keymap.set({ 'n', 'v' }, 'H', '^')
 
+--delete into blackhole register so it does not fill yank reg
+vim.keymap.set({ 'n', 'v' }, '<leader>d', '"_d')
+
 --force myself to stay on home row and not use arrow keys
 vim.keymap.set({ 'n', 'v' }, '<up>', '<nop>')
 vim.keymap.set({ 'n', 'v' }, '<down>', '<nop>')
@@ -39,19 +42,20 @@ vim.keymap.set('t', '<C-j>', '<C-\\><C-n>')
 vim.keymap.set({ 'n', 'v' }, '<C-s>', ':w<CR>')
 vim.keymap.set('i', '<C-s>', '<Esc><cmd>w<CR>i')
 
---close curr window with alt-q
-vim.keymap.set('n', '<M-q>', ':q<cr>')
-vim.keymap.set('i', '<M-q>', '<Esc>:q<CR>')
+--close curr window
+vim.keymap.set('n', '<leader>q', '<cmd>q<cr>')
+vim.keymap.set('i', '<M-q>', '<Esc><cmd>q<CR>')
 
 --open new tab
 vim.keymap.set('n', '<C-t>', ':tabnew<CR>')
 
 --tab nav
-vim.keymap.set('n', '<M-l>', 'gt')
-vim.keymap.set('n', '<M-h>', 'gT')
+vim.keymap.set({ 'n', 'v' }, '<leader>l', 'gt')
+vim.keymap.set({ 'n', 'v' }, '<leader>h', 'gT')
 vim.keymap.set('i', '<M-l>', '<Esc>gt')
 vim.keymap.set('i', '<M-h>', '<Esc>gT')
 
+--switch to first terminal tab found
 vim.keymap.set('n', '<leader>0', function()
   for i = 0, vim.fn.tabpagenr '$' - 1, 1 do
     local buffs = vim.fn.tabpagebuflist(i + 1)
@@ -65,6 +69,7 @@ vim.keymap.set('n', '<leader>0', function()
   end
   vim.api.nvim_err_writeln 'No terminal tab found'
 end)
+
 for i = 1, 10, 1 do
   vim.keymap.set('n', string.format('<leader>%d', i), string.format(':tabn %d<cr>', i))
 end
@@ -74,12 +79,9 @@ vim.keymap.set({ 'n', 'v' }, '<C-Space>', vim.lsp.buf.code_action)
 vim.keymap.set('i', '<C-Space>', vim.lsp.buf.code_action)
 
 --quickfix nav
-vim.keymap.set('n', '<M-p>', ':cprev<cr>')
-vim.keymap.set('n', '<M-n>', ':cnext<cr>')
+vim.keymap.set({ 'n', 'v' }, '<leader>p', ':cprev<CR>')
+vim.keymap.set({ 'n', 'v' }, '<leader>n', ':cnext<CR>')
 
 -- tmux shortcuts
-vim.keymap.set('n', '<M-left>', ':!tmux previous-window<cr><silent>')
-vim.keymap.set('n', '<M-right>', ':!tmux next-window<cr><silent>')
-
---git blame
-vim.keymap.set('n', '<leader>gb', ':G blame<cr>')
+vim.keymap.set('n', '<leader><left>', '<cmd>tmux previous-window<CR><silent>')
+vim.keymap.set('n', '<leader><right>', '<cmd>tmux next-window<CR><silent>')
