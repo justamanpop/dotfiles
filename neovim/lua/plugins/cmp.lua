@@ -1,4 +1,5 @@
 -- <C-l> to jump to next arg in snippet
+-- <C-h> to jump to prev arg in snippet
 
 return {
   'hrsh7th/nvim-cmp',
@@ -16,17 +17,9 @@ return {
         end
         return 'make install_jsregexp'
       end)(),
-      dependencies = {
-        -- `friendly-snippets` contains a variety of premade snippets.
-        --    See the README about individual language/framework/plugin snippets:
-        --    https://github.com/rafamadriz/friendly-snippets
-        {
-          'rafamadriz/friendly-snippets',
-          config = function()
-            require('luasnip.loaders.from_vscode').lazy_load()
-          end,
-        },
-      },
+      config = function()
+        require('luasnip.loaders.from_lua').load { paths = { '~/.config/nvim/lua/custom/snippets' } }
+      end,
     },
     'saadparwaiz1/cmp_luasnip',
 

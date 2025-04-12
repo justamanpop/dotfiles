@@ -1,0 +1,8 @@
+1. look into snacks picker over telescope (will have to replace lspconfig stuff specific to telescope too then)
+2̶.̶ ̶m̶o̶v̶e̶ ̶L̶S̶P̶ ̶i̶n̶t̶o̶ ̶s̶e̶p̶a̶r̶a̶t̶e̶ ̶p̶l̶u̶g̶i̶n̶ ̶f̶i̶l̶e̶
+3̶.̶ ̶m̶o̶v̶e̶ ̶a̶u̶t̶o̶c̶o̶m̶p̶l̶e̶t̶e̶ ̶i̶n̶t̶o̶ ̶s̶e̶p̶a̶r̶a̶t̶e̶ ̶p̶l̶u̶g̶i̶n̶ ̶f̶i̶l̶e̶
+4̶.̶ ̶m̶o̶v̶e̶ ̶c̶o̶n̶f̶o̶r̶m̶ ̶i̶n̶t̶o̶ ̶s̶e̶p̶a̶r̶a̶t̶e̶ ̶p̶l̶u̶g̶i̶n̶ ̶f̶i̶l̶e̶
+5̶.̶ ̶g̶o̶ ̶t̶h̶r̶o̶u̶g̶h̶ ̶m̶i̶n̶i̶.̶n̶v̶i̶m̶ ̶m̶o̶d̶u̶l̶e̶s̶ ̶a̶n̶d̶ ̶a̶n̶a̶l̶y̶z̶e̶
+6̶.̶ ̶r̶e̶p̶l̶a̶c̶e̶m̶e̶n̶t̶ ̶f̶o̶r̶ ̶n̶v̶i̶m̶-̶t̶r̶e̶e̶ ̶-̶ ̶m̶i̶n̶i̶.̶f̶i̶l̶e̶s̶
+7̶.̶ ̶l̶o̶o̶k̶ ̶i̶n̶t̶o̶ ̶u̶s̶i̶n̶g̶ ̶m̶i̶n̶i̶ ̶v̶i̶s̶i̶t̶s̶ ̶o̶v̶e̶r̶ ̶s̶n̶i̶p̶e̶
+8. Look for any work laptop only snippets and update github with it

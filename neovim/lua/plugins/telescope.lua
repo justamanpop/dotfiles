@@ -102,7 +102,7 @@ return { -- Fuzzy Finder (files, lsp, etc)
       '<Esc><cmd>lua require"telescope.builtin".find_files({hidden = true, no_ignore = true})<CR>',
       { desc = 'Open file finder from insert mode' }
     )
-    vim.keymap.set('n', '<M-s>', '<cmd>Telescope live_grep<cr>')
+    vim.keymap.set('n', '<leader>s', '<cmd>Telescope live_grep<cr>')
 
     -- Slightly advanced example of overriding default behavior and theme
     vim.keymap.set('n', '<leader>/', function()
