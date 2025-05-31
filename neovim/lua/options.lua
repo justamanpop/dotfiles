@@ -9,14 +9,14 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 --
 -- Allow mouse
-vim.opt.mouse = 'a'
+vim.opt.mouse = "a"
 
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
 --
 -- Sync clipboard between OS and Neovim.
 --  See `:help 'clipboard'`
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.clipboard = "unnamedplus"
 
 -- Enable break indent, which means for wrapped lines, it starts at the same indent as the actual start of line
 vim.opt.breakindent = true
@@ -29,7 +29,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- Keep signcolumn on by default
-vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = "yes"
 
 -- Decrease Tpdate time
 vim.opt.updatetime = 250
@@ -46,10 +46,10 @@ vim.opt.splitbelow = true
 --  See `:help 'list'`
 --  and `:help 'listchars'`
 vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 -- Preview substitutions live, as you type!
-vim.opt.inccommand = 'split'
+vim.opt.inccommand = "split"
 
 -- Lightly shades which line your cursor is on
 vim.opt.cursorline = true
