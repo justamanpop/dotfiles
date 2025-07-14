@@ -51,8 +51,8 @@ require("lazy").setup({
 	-- Highlight, edit, and navigate code
 	require("plugins.treesitter"),
 
-	-- shows context (which function/block the current highlighted line is in)
-	"nvim-treesitter/nvim-treesitter-context",
+	-- Shows function/class/context of current line of code near top of the view window
+	require("plugins.treesitter_context"),
 
 	-- auto fills in closing brackets and quotes when opened
 	require("plugins.autopairs"),
