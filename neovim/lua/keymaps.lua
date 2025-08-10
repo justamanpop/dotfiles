@@ -85,3 +85,6 @@ vim.keymap.set({ "n", "v" }, "<leader>n", ":cnext<CR>")
 -- tmux shortcuts
 vim.keymap.set("n", "<leader><left>", "<cmd>!tmux previous-window<CR><silent>")
 vim.keymap.set("n", "<leader><right>", "<cmd>!tmux next-window<CR><silent>")
+
+--go to definition in new tab
+vim.keymap.set("n", "gt", "<cmd>tab split | lua vim.lsp.buf.definition()<CR>", {})
